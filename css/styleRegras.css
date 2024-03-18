@@ -1,0 +1,120 @@
+/*-------------Cores-----------------
+:root {
+    --bege-dev-shyne: #F5E4D3;
+    --bege-dev-dark: #B9874F;
+    --bege-dev: #DEA86F;
+    --bege-dev-dark-shyne:#5E472F;
+    --brow-dev: #2C2116;
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-dark-blue: #0B0C0F;
+    --dark-blue: #2B313D;
+    --silver: #303030;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    background-color: var(--bege-dev);
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+#mostrarRegras {
+    background-color: var(--bege-dev-dark);
+    color: var(--white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+#mostrarRegras:hover {
+    background-color: var(--bege-dev-dark-shyne);
+}
+
+#regrasContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#regrasContainer ul {
+    list-style-type: none;
+}
+
+#regrasContainer li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#regrasContainer li:hover {
+    color: var(--bege-dev-dark);
+}
+*/
+
+:root {
+    --bg: #f5f5f5;
+    --bege-dev: #DEA86F;
+    --bege-dev-shyne: #F5E4D3;
+    --bege-dev-dark: #B9874F;
+    --bege-dev: #DEA86F;
+    --brow-dev: #2C2116;
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-dark-blue: #0B0C0F;
+    --dark-blue: #2B313D;
+    --silver: #808080;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: var(--bege-dev);
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    position: relative;
+    top: 150px;
+    border: solid var(--black);
+    padding: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  
+  }
+  

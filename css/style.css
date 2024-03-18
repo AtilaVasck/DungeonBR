@@ -1,0 +1,719 @@
+/*-------------Cores-----------------*/
+:root {
+    --bege-dev-shyne: #F5E4D3;
+    --bege-dev-dark: #B9874F;
+    --bege-dev: #DEA86F;
+    --bege-dev-dark-shyne:#5E472F;
+    --brow-dev: #2C2116;
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-dark-blue: #0B0C0F;
+    --dark-blue: #2B313D;
+    --silver: #303030;
+}
+
+/*------------Gerais----------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    background-color: var(--bege-dev);
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+/* Imagens à esquerda */
+.dadoVermelho,
+.logo {
+    float: left;
+}
+
+/* Links à direita */
+.Cadastrar,
+.Entrar {
+    float: right;
+}
+
+/*-------Main----------*/
+
+.main {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomMain {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--black);
+    border: 2px solid var(--bege-dev-dark);
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .35s;
+    z-index: 1;
+}
+
+
+.bottomMain:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bege-dev-dark);
+    transition: all .35s;
+    z-index: -1;
+}
+
+.bottomMain:hover {
+    color: var(--white);
+}
+
+.bottomMain:hover:after {
+    width: 100%;
+}
+
+.bottomMainWrapper {
+    display: block;
+    margin-top: 10px; /* Adicione um espaçamento entre as divs, se necessário */
+    text-align: center;
+}
+
+/*--------------Caixas------------------*/
+.navBar {
+    background: var(--brow-dev);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 10px;
+    top: 0;
+    z-index: 9999;
+}
+.boxOp1 {
+    height: 80px;
+    margin-left: 100px;
+}
+
+.boxOp2 {
+    margin-top: 15px;
+    margin-right: 100px;
+}
+
+.SubCaixa {
+    height: 180px;
+    background: var(--bege-dev-dark);
+    text-align: center;
+}
+
+.caixa_alta {
+    color: var(--black);
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin-top: 100px;
+}
+
+.Container {
+    background-color: var(--bege-dev);
+    text-align: center;
+}
+
+#character-info, #race-info {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom : 10px;
+    margin-top: 10px;
+}
+
+#character-info h3 {
+    text-align: center; /* Centralizar apenas o título */
+}
+#back-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ /* Isso centralizará o botão horizontalmente */
+}
+#back-button.dark {
+    background-color: var(--bege-dev-shyne);
+} 
+
+.limitador {
+    /*background-image: linear-gradient(to bottom, var(--bege-dev), var(--bege-dev-dark));
+    */width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--bege-dev-dark);
+}
+
+.lista_img {
+    display: block;
+    max-width: 700px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+
+}
+
+.ol_section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.fim {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*----------------imagens-------------------*/
+.lista_img .imgPatrulheiro {
+    width: 130px;
+    height: 250px;
+}
+
+.lista_img img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+.lista_img img:hover {
+    transform: scale(1.05);
+}
+
+.Tiamat {
+    width: 100%;
+}
+
+.dadoVermelho {
+    transition: all 0.5s ease-in;
+    width: 60px;
+    height: 60px;
+}
+
+.logo {
+    filter: brightness(0) saturate(1) invert(1);
+    width: 120px;
+    height: 65px;
+    transition: all 0.5s ease;
+}
+
+/*----------------textos/botões-------------------*/
+
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+.Cadastrar {
+    text-decoration: none;
+    width: 160px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--bege-dev-shyne);
+    text-align: center;
+}
+
+.Entrar {
+    text-align: center;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    border: solid;
+    color: var(--bege-dev-shyne);
+    border-color: var(--bege-dev);
+    z-index: 1;
+}
+
+.Entrar:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bege-dev);
+    transition: all .35s;
+    z-index: -1;
+}
+
+.Entrar:hover {
+    color: #fff;
+}
+
+.Entrar:hover:after {
+    width: 100%;
+}
+
+.SubCaixa h1 {
+    color: #F5E4D3;
+}
+
+.footer p {
+    color: var(--white);
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Inter';
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s ease;
+}
+
+/*------------Modo noturno------------*/
+
+body.dark {
+    background: var(--dark-blue);
+} 
+
+.main.dark{
+    background: var(--dark-blue);
+}
+
+.footer.dark {
+    background: var(--black);
+    color: var(--black);
+}
+
+.navBar.dark {
+    background: var(--black);
+}
+
+.SubCaixa.dark {
+    background: var(--very-dark-blue);
+}
+
+.Tiamat.dark {
+    background-color: var(--dark-blue);
+}
+
+.Container.dark {
+    background-color: var(--dark-blue);
+}
+
+.Entrar.dark {
+    border-color: var(--dark-blue);
+}
+
+.Entrar.dark:after {
+    background: var(--dark-blue);
+}
+
+.caixa_alta.dark {
+    color: var(--white);
+}
+
+.bottomMain.dark {
+    color: var(--white);
+    border-color: var(--black);
+}
+.bottomMain.dark:after {
+    background: var(--black);
+}
+
+p.dark {
+    color: var(--white);
+}
+
+h2.dark {
+    color: var(--white);
+}
+
+.container.dark {
+    background-color: var(--dark-blue);
+}
+
+.limitador.dark {
+    background-color: var(--very-dark-blue);
+}
+
+.footer-arrow.dark svg {
+    background-color: var(--silver);
+}
+
+.main_footer.dark {
+    background-color: var(--very-dark-blue);
+}
+
+.main_footer_copy.dark {
+    background-color: var(--black);
+}
+
+.main_footer_copy.dark p {
+    color: var(--white);
+}
+
+.main_footer_copy.dark .by a:hover {
+    color: #f1c40f;
+}
+
+.footer-arrow .shape-fill.dark {
+    fill: var(--very-dark-blue);
+}
+
+.fim.dark {
+    background-color: var(--dark-blue);
+}
+/*---------button dark mode-------------*/
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.label {
+    margin-top: 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5px;
+    position: relative;
+    height: 30px;
+    width: 50px;
+
+}
+
+.label .ball {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px; 
+    top: 2px;
+    left: 2px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(20px); 
+}
+/*-------icons-----------*/
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/*---------id character info------------*/
+#character-info {
+    text-align: left;
+  }
+  
+  #back-button {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--bege-dev-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #back-button:hover {
+    background-color: var(--brow-dev);
+  }
+
+/*----------footer------------*/
+
+.footer-arrow {
+    float:left ;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.footer-arrow svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+    background-color: var(--bege-dev-dark);
+}
+
+.footer-arrow .shape-fill {
+
+    fill: var(--bege-dev-dark-shyne);
+
+}
+
+.main_footer          { background-color:var(--bege-dev-dark-shyne); color:var(--white); font-size:1em; }
+.main_footer .content { float:left; width:80%; margin:0 10%; padding: 5em 0; }
+
+.container { float:left; width:100%; }
+.colfooter { 
+ 
+  width:100%; 
+  height:auto; 
+  float:left; 
+  margin-bottom:2em;
+}
+.colfooter ul        { width:100%; float:left; }
+.colfooter ul li     { padding:0.2em 0em; }
+.colfooter ul li a   { text-decoration:none; color:var(--white); font-size:1em; transition:0.2s; }
+.colfooter ul li a i { font-size:0.5em; }
+.colfooter ul li a:hover { color:#fffb00; }
+
+.colfooter .titleFooter   { 
+
+  font-family: 'Lato', sans-serif; 
+  font-size:1.3em; 
+  color:var(--white); 
+  padding-bottom: 0.5em; 
+  margin-bottom:0.5em; 
+  border-bottom: 1px var(--bege-dev) solid;
+
+}
+
+.colfooter p  { 
+
+  font-family: 'Lato', sans-serif; 
+  color:var(--white); 
+  font-size:1em; 
+  height:25px; 
+
+}
+
+.colfooter .redesocial { 
+    
+    color: var(--white);
+    float: left;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    transition:0.2s;
+
+}
+
+.colfooter .redesocial:hover { 
+    
+    color: #fffb00;
+    transition:0.2s;
+
+}
+
+
+.main_footer_copy   { background-color:var(--brow-dev); width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p { font-size:1em; color:var(--white); height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by a       { color:var(--white); text-decoration:none; font-weight:600; transition:0.2s; }
+.main_footer_copy .by a:hover { text-decoration:underline; color: #f1c40f; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px;}
+
+/*Responsivo*/
+/*768PX BREAKPOINT*/
+@media (min-width:48em){
+  
+  .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
+  .colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
+
+  .footer-arrow svg { height:50px; margin: 0 auto;}
+
+}
+
+/*960PX BREAKPOINT*/
+@media (min-width:60em) {
+
+  .footer-arrow svg { height:70px; }
+
+}
+
+/*1280PX BREAKPOINT*/
+@media (min-width:80em) {
+
+  .footer-arrow svg { height:90px; }
+ 
+}
+
+/* Adicione as regras de mídia para telas menores que 768px (dispositivos móveis) */
+@media only screen and (max-width: 767px) {
+
+    .navBar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navBar .boxOp2 {
+        display: grid;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navBar .boxOp1 {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 4em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navBar .boxOp1 .dadoVermelho{
+        margin-left: 23%;
+    }
+
+    .container h2{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .container p{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .lista_img {
+        max-width: 300px;
+    }
+    /* Redimensiona as imagens para dispositivos móveis */
+    .lista_img img { height: auto;transition: transform 0.2s ease; }
+
+    /* Aumenta um pouco o tamanho da imagem quando o usuário passar o cursor sobre ela */
+    .lista_img img:hover { transform: scale(1.1); /* Aumenta em 10% quando o cursor estiver sobre a imagem */}
+
+    .lista_img .imgPatrulheiro { width: 145px;height: 300px;}
+
+    .lista_img .imgMonge { width: 145px;height: 300px;}
+
+    .lista_img .imgMago { width: 178px;}
+
+    .lista_img .imgLadino { width: 145px;height: 300px;}
+
+    .lista_img .imgFeiticeiro {width: 145px;height: 300px;}
+    
+    .lista_img .imgClerigo {width: 145px;height: 300px;}
+
+    .lista_img .imgBardo {width: 145px;height: 300px;}
+
+    /* Ajusta o tamanho do botão dark mode */
+    .label .ball {
+        height: 25px;
+        width: 25px;
+    }
+
+    .label .fa-moon,
+    .label .fa-sun {
+        font-size: 14px;
+    }
+
+    /* Ajusta o tamanho dos botões */
+    .bottomMain {
+        max-width: 180px;
+    }
+
+    /* Corrige o texto dos botões */
+    .bottomMain {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /* Ajusta a posição da bolinha do botão de alternância do modo claro/escuro */
+    .label {
+        position: relative; /* Define a posição relativa */
+        overflow: hidden;
+    }
+
+    .label .ball {
+        position: absolute; /* Define a posição absoluta */
+        top: calc(50% - 13px); /* Ajusta para o centro vertical */
+    }
+
+    .caixa_alta {
+        max-width: 300px;
+    }
+
+    .main {
+        display: grid; /* Define como bloco para que os elementos sejam exibidos um abaixo do outro */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottomMainWrapper {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottomMain {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-container {
+        margin-bottom: 20px;
+    }
+
+    .fim{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

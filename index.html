@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./images/DadoVermelho.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DungeonsBR</title>
+</head>
+<body>
+    <audio src="./audio/no-copyright-medieval-music-loops-alexander-nakarada.mp3"  autoplay loop>
+        <!--- autoplay loop --->
+        <p>Seu navegador não suporta o arquivo mp3</p>
+    </audio>
+    <!-- Cabeçalho -->
+    <header class="navBar">
+        <div class="boxOp1">
+            <img class="dadoVermelho" src="./images/DadoVermelho.png" alt="#">
+           <a href="./index.html"> <img class="logo" src="./images/logoD&D.png" alt="#"> </a>
+        </div>
+        <div class="boxOp2">
+            <a class="Cadastrar" href="./pages/cadastrar.html">Cadastrar</a>
+            <a class="Entrar" href="./pages/entrar.html">Entrar</a>
+        </div>
+    </header>
+    
+    <!-- Introduced -->
+    
+    <form>
+        <nav class="SubCaixa">
+            <!-- modo dark -->
+            <div>
+                <input type="checkbox" class="checkbox" id="chk">
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+                <br>
+            <h1>D&D 5e</h1>
+            <h1>Primeiros passos</h1>
+        </nav>
+    </form>
+
+    
+    <!-- Images principal -->
+    <img class="Tiamat" src="./images/Tiamat_D&D.png" alt="#">
+    <!-- Fim da img principal e o roda-pé do site. -->
+
+
+<div class="caixa_alta">
+    <section>
+        <h2>Bem vindos aos seus primeiros passos nesse belo mundo de fantasia e tragedia!</h2>
+        <br><br>
+        <p>Aqui você consegue encontrar uma enorme facilidade para acessar diversos livros da franquia D&D.
+        Além, de contar com recursos que impactam positivamente no seu aprendizado, principalmente para você que quer iniciar uma enorme aventura!</p>
+        <p>A baixo, apenas a um click, você pode criar sua ficha de D&D facilitada, pode navegar pelos varios livros da franquia que tanto adoramos! Além, de você ter acesso a umas regras básicas perfeitas para quem está iniciando. Bom jogos e boa diversão!</p>
+    </section>
+</div>
+
+<hr>
+
+<main class="main">
+    <div class="bottomMainWrapper">
+        <a class="bottomMain" href="./pages/LinkLivros.html">links dos Livros</a>
+    </div>
+    <div class="bottomMainWrapper">
+        <a class="bottomMain" href="./pages/Ficha.html">Criando sua Ficha</a>
+    </div>
+    <div class="bottomMainWrapper">
+        <a class="bottomMain" href="./pages/regras.html">Regras básicas</a>
+    </div>
+</main>
+
+<hr>
+
+    <div class="limitador"></div>
+    <div class="container">  
+        <section>
+            <h2>Aqui você pode conhecer um pouco das nossas classes e raças! </h2>
+            <br>
+            <p>Basta dar um clique na imagem que gostaria de saber mais e boa diversão!</p>
+        </section>
+        <div class="limitador"></div>
+        <ol class="ol_section">
+            <li class="lista_img">
+                <img class="imgBarbaro" src="./images/barbaro.png" alt="Barbarian" data-class="barbarian" data-race="human">
+                <img class="imgBardo" src="./images/bardo.png" alt="bard" data-class="bard" data-race="tiefling">
+                <img class="imgBruxo" src="./images/bruxo.png" alt="Warlock" data-class="warlock" data-race="human">
+
+                <img class="imgClerigo" src="./images/clerigo.png" alt="Cleric" data-class="cleric" data-race="human">
+                <img class="imgDruida" src="./images/druida.png" alt="druid" data-class="druid" data-race="human">
+                <img class="imgFeiticeiro" src="./images/feiticeiro.png" alt="Sorcerer" data-class="sorcerer" data-race="human">
+
+                <img class="imgGuerreiro" src="./images/guerreiro.png" alt="fighter" data-class="fighter" data-race="human">
+                <img class="imgLadino" src="./images/ladino.png" alt="rogue" data-class="rogue" data-race="human">
+                <img class="imgMago" src="./images/mago.png" alt="wizard" data-class="wizard" data-race="human">
+
+                <img class="imgMonge" src="./images/monge.png" alt="monk" data-class="monk" data-race="human">
+                <img class="imgPaladino" src="./images/paladino.png" alt="paladin" data-class="paladin" data-race="human">
+                <img class="imgPatrulheiro" src="./images/patrulheiro.png" alt="ranger" data-class="ranger" data-race="human">
+    
+            </li>
+        </ol>
+        <div class="info-container">
+            <h2>Informações do personagem:</h2>
+            <div id="character-info"  class="info">
+                <!-- Informações da classe serão exibidas aqui -->
+            </div>
+            <div id="race-info"  class="info">
+                <!-- Informações da raça serão exibidas aqui -->
+            </div>
+            <button id="back-button" style="display: none;">Voltar</button>
+        </div>
+        <div class="limitador"></div>
+    </div>
+    
+<hr>
+
+
+<section class="fim">
+    <h2>Espero que tenha gostado do xp!</h2>
+    <h2>Compartilhe nosso site se acharam interessante taberneiros, voltem sempre para mais uma dose de rum!</h2><br>
+    <p>P.S: Com a ajuda de cada um, mais informações teremos em nosso web site nas futuras atualizações, conto com a sua ajuda taberneiro!</p>
+</section>
+<br><br><br><br><br><br><br>
+      <!--Inicia Footer-->
+    
+      <div class="footer-arrow">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <footer class="main_footer container">
+        
+        <div class="content">
+            
+            <div class="colfooter">
+                
+                <h4 class="titleFooter"> Menu</h4>
+                
+                <ul>
+                
+                  <li><a href="./index.html" title="Página Inícial">Página Inícial</a></li>
+                
+                </ul>
+            
+            </div><!--Col Footer 1-->        
+            
+            <div class="colfooter">
+               
+               <h4 class="titleFooter">Contato</h4>
+               <p><i class="icon icon-mail"></i> atilacleiton52@gmail.com</p>
+               <p><i class="icon icon-phone"></i> 82 98214-3392</p>
+               <p><i class="icon icon-whatsapp"></i> 82 99603-5805</p>
+            
+            </div><!--Col Footer 2-->
+            
+            <div class="colfooter">
+               
+                <h4 class="titleFooter"> Redes Sociais</h4>
+                
+                <a href="https://www.facebook.com/atila.cleiton.92/" target = "_blank" class="redesocial"><span> <i class="icon icon-facebook"></i>/Atila Cleiton</span></a>            
+                <a href="https://www.instagram.com/atila_vasck/" target = "_blank" class="redesocial"><span> <i class="icon icon-instagram"></i>/@Atila_Vasck</span></a>                   
+                <a href="https://br.pinterest.com/atilacleiton52/" target = "_blank" class="redesocial"><span> <i class="icon icon-pinterest"></i>/AtilaVasck</span></a>  
+            
+            </div><!--Col Footer 3-->
+            
+            <div class="clear"></div>
+        
+        </div><!--Contant-->
+        
+        <div class="main_footer_copy">
+            
+            <p class="m-b-footer"> DungeonsBR &copy; - 2024, todos os direitos reservados.</p> <br>
+            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="https://github.com/AtilaVasck" title="Átila Vasck" target = "_blank">Átila Vasck</a></p>
+        
+        </div>
+
+    </footer>
+
+    <!--Fecha Footer-->
+    
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
